@@ -24,8 +24,8 @@ export const difficulty = {
 }
 
 const getRandomAnswer = () => {
-  const randomIndex = Math.floor(Math.random() * answers.length)
-  return answers[randomIndex].toUpperCase()
+  // const randomIndex = Math.floor(Math.random() * answers.length)
+  return 'BLADE'
 }
 
 type State = {
