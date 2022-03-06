@@ -72,7 +72,7 @@ export const EndGameModal = ({
           className="rounded-lg px-6 py-2 mt-8 text-lg nm-flat-background dark:nm-flat-background-dark hover:nm-inset-background dark:hover:nm-inset-background-dark text-primary dark:text-primary-dark"
           onClick={playAgain}
         >
-          Play Again --D
+          Play Again
         </button>
       </div>
     )
@@ -95,40 +95,7 @@ export const EndGameModal = ({
           {gameState === state.won && (
             <>
               <h1 className=" text-3xl">Congrats! 🎉</h1>
-              <dl className="mt-5 grid grid-cols-1 gap-5">
-                <div className="rounded-lg p-4 flex-grow relative nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark">
-                  <dt className="text-sm font-medium truncate">Current Streak</dt>
-                  <dd
-                    className={`mt-1 text-3xl font-semibold ${currentStreakClass(currentStreak)}`}
-                  >
-                    {currentStreak}
-                    {currentStreak >= streakOkayThreshold && '🔥'}
-                    {currentStreak >= streakGoodThreshold && '🔥'}
-                    {currentStreak >= streakGreatThreshold && '🔥'}
-                  </dd>
-                </div>
-
-                {avgGuessesPerGame > 0 && (
-                  <div className="rounded-lg p-4 flex-grow relative nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark">
-                    <dt className="text-sm font-medium truncate">Avg. guesses in streak</dt>
-                    <dd
-                      className={`mt-1 text-3xl font-semibold ${avgGuessesClass(
-                        avgGuessesPerGame
-                      )}`}
-                    >
-                      {avgGuessesPerGame.toFixed(1)}
-                      {avgGuessesPerGame <= avgGuessesPerGameOkayThreshold && '🔥'}
-                      {avgGuessesPerGame <= avgGuessesPerGameGoodThreshold && '🔥'}
-                      {avgGuessesPerGame <= avgGuessesPerGameGreatThreshold && '🔥'}
-                    </dd>
-                  </div>
-                )}
-
-                <div className="rounded-lg p-4 flex-grow relative nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark">
-                  <dt className="text-sm font-medium truncate">Longest streak</dt>
-                  <dd className="mt-1 text-3xl font-semibold">{longestStreak}</dd>
-                </div>
-              </dl>
+              <p>--D</p>
             </>
           )}
           {gameState === state.lost && (
