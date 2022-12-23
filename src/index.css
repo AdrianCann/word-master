@@ -26,7 +26,11 @@ code {
 body,
 html {
   /* Prevent overscroll on chrome (not supported on safari) */
-  overscroll-behavior-y: none;
+  background: url("https://media.giphy.com/media/PRK7GwyAaWnEA/giphy.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .h-fill {
   height: 100vh;

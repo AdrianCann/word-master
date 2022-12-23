@@ -366,7 +366,7 @@ function App() {
 
   return (
     <div>
-      <div className={`flex flex-col justify-between h-fill bg-background dark:bg-background-dark`}>
+      <div className={`flex flex-col justify-between h-fill`}>
         <header className="flex items-center py-2 px-3 text-primary dark:text-primary-dark">
           <button
             type="button"
@@ -375,10 +375,10 @@ function App() {
           >
             <Settings />
           </button>
-          <h1 className="flex-1 text-center text-xl xxs:text-2xl sm:text-4xl tracking-wide font-bold font-righteous">
+          <h1 className="text-green-500 flex-1 text-center text-xl xxs:text-2xl sm:text-4xl tracking-wide font-bold font-righteous">
             Christmas Carol Wordle
           </h1>
-          <p>
+          <p className="text-green-500">
             Instructions:
           </p>
           <button
