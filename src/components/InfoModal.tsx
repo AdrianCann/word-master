@@ -13,14 +13,14 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose, darkMode, styles }: Props) => (
   <Modal isOpen={isOpen} onRequestClose={handleClose} style={styles} contentLabel="Game Info Modal">
-    <div className={`h-full ${darkMode ? 'dark' : ''}`}>
+    <div className={`${darkMode ? 'dark' : ''}`}>
       <button
-        className="absolute top-4 right-4 rounded-full nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark p-1 w-6 h-6 sm:p-2 sm:h-8 sm:w-8 hover:nm-inset-background dark:hover:nm-inset-background-dark"
+        className="absolute top-4 right-4 rounded-full nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark p-1 w-6 sm:p-2 sm:w-8 hover:nm-inset-background dark:hover:nm-inset-background-dark"
         onClick={handleClose}
       >
         <Close />
       </button>
-      <div className="h-full flex flex-col items-center justify-center max-w-[390px] mx-auto pt-9 text-primary dark:text-primary-dark">
+      <div className="flex flex-col items-center justify-center max-w-[390px] mx-auto pt-9 text-primary dark:text-primary-dark">
         <div className="flex-1 w-full sm:text-base text-sm">
           <h1 className="text-center sm:text-3xl text-2xl">How to play</h1>
           <ul className="list-disc pl-5 block sm:text-base text-sm">
@@ -50,6 +50,42 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }: Props) => (
           <span className="mx-2">=</span>
           <span>Wrong letter</span>
         </div>
+        <div className="mt-5 mb-5">
+          <h3>All words are from Christmas songs linked here:</h3>
+        </div>
+        <ul className="list-disc pl-5 block sm:text-base text-sm text-blue-600">
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/deckthehalls.html">Deck the Halls</a>
+          </li>
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/feliz.html">Feliz Navidad</a>
+          </li>
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/frosty.html">Frosty the Snowman</a>
+          </li>
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/jingle.html">Jingly Bells</a>
+          </li>
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/oholynite.html">O Holy Night</a>
+          </li>
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/rudolph.html">Rudolph The Red Nosed Reindeer</a>
+          </li>
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/silent_night.html">Silent Nigh</a>
+          </li>
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/twelvedays.html">The Twelve Days of Christmas</a>
+          </li>
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/wewishu.html">We Wish You A Merry Christmas</a>
+          </li>
+          <li className="mb-2">
+            <a href="https://www.41051.com/xmaslyrics/winterwon.html">Winter Wonderland</a>
+          </li>
+
+        </ul>
         <div className="flex justify-center sm:text-base text-sm">
           <span>This project is open source on</span>
           <a

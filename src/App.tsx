@@ -376,8 +376,11 @@ function App() {
             <Settings />
           </button>
           <h1 className="flex-1 text-center text-xl xxs:text-2xl sm:text-4xl tracking-wide font-bold font-righteous">
-            Word Master ("not wordle")
+            Christmas Carol Wordle
           </h1>
+          <p>
+            Instructions:
+          </p>
           <button
             type="button"
             onClick={() => setInfoModalIsOpen(true)}
